@@ -1,0 +1,61 @@
+Git Commands
+
+git : to check if git is installed or not
+git init : to intilise git 
+ls : list the folders or files present in direcotry
+touch (filename.extention): to create new file (touch names.txt)
+
+git status : when we create,update or delete something then to check that we use this command
+
+git add .(all files) or (filename.extention) : to add particular file for checkin on git folder online (git add names.txt)
+
+git commit -m "" : to commit changes done, whereas -m stands for message (git commit -m "First Commit")
+
+vi (filename.extention): to edit in existing file, press insert to edit and (Esc + :x) to exit   (vi names.txt)
+
+cat (filename.extention): to view the file containt (cat names.txt)
+
+rm (filename.extention): to delete file (rm names.txt)
+
+git log : to get history of git 
+
+git reset : to get back to old commit from below id generated of commit
+ff638c7da2d10774e5effba38962302ce13ad828
+
+git restore (filename.extention) : to restore the file if it is removed 
+
+---------------------------------------------------------------------------------------
+How to github repository to local project i.e.deploy files from local pc to github
+
+-create new repository and get the link
+https://github.com/tejas3227/Practise-Git
+
+-to connect with local project 
+git remote add origin https://github.com/tejas3227/Practise-Git
+
+$ git remote -v
+origin  https://github.com/tejas3227/Practise-Git (fetch)
+origin  https://github.com/tejas3227/Practise-Git (push)
+
+-to update the changes 
+git push origin master : master is branch name it may change
+
+-----------------------------------------------------------------------------------------
+Branches in Git
+
+-To create new Branch
+git branch (branch name) : git branch EIS
+
+-To use that branch or add files in that branch
+git checkout (branch name) : git checkout EIS
+
+-to merge 2 branches
+git merge (branch name): git merge EIS  here it will merge changes of EIS branch to master branch
+
+---------------------------------------------------------------------------------------------
+When you want to access or change code from other repository 
+1)Click on Fork and add it to your own repository as we dont have access to chagne or update
+2)Then copy URL from Code > Copy http url
+3)git clone https://github.com/tejas3227/awesome-llm-apps.git
+https://github.com/Shubhamsaboo/awesome-llm-apps.git
+               
